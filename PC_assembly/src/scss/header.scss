@@ -1,0 +1,32 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 4rem 8rem;
+    width: 100%;
+    z-index: 10;
+    &__wrap,
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__nav{
+        &--item{
+            font-weight: 400;
+            font-size: var(--text-size-medium);
+            line-height: 150%;
+            &:not(:last-child) {
+                margin-right: 5.6rem;
+            }
+            &:hover{
+                color: #7C6AFA;
+            }
+        }
+    }
+    &__button {
+        margin-left: 55.3rem;
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    }
+}

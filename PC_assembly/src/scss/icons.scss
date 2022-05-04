@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'icons';
+    src:
+      url('../fonts/icons.woff') format('woff'),
+      url('../fonts/icons.woff2#icons') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  %ic{
+      font-family: 'icons';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  [class^="_icon-"], [class*=" _icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    &::before{
+        @extend %ic;
+        display: block;
+    }
+  }
+  
+  ._icon-facebook:before {
+    content: "\e909";
+    color: #fff;
+  }
+  ._icon-instagram:before {
+    content: "\e90a";
+    color: #fff;
+  }
+  ._icon-linked:before {
+    content: "\e90b";
+  }
+  ._icon-youtube:before {
+    content: "\e90c";
+    color: #fff;
+  }
+  
